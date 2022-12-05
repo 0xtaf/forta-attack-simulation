@@ -36,16 +36,15 @@ The bot also supports calling of `payable` functions, to which it sends the amou
 You can configure the agent in the [bot-config.json](./bot-config.json) file.
 Supported token standards: native (e.g. ETH, MATIC), ERC20, ERC721, ERC1155.
 
-For native and ERC20 tokens, the threshold value is specified in dollars. 
+For native and ERC20 tokens, the threshold value is specified in dollars.
 As soon as the total amount of dollars exceeds the threshold, the bot fires an alert.
 You can specify this threshold value in `totalUsdTransferThreshold` field.
 
 To determine the USD value of tokens, the [DefiLlama Api](https://defillama.com/docs/api) is used.
 
 For tokens ERC721, ERC1155, the bot uses a threshold based on the total number of transferred tokens.
-For example, by setting `threshold` to `10` for an ERC721 token, the bot will fire an alert if it detects that an account has taken ownership of 11 different tokens (token IDs). 
+For example, by setting `threshold` to `10` for an ERC721 token, the bot will fire an alert if it detects that an account has taken ownership of 11 different tokens (token IDs).
 For ERC1155 tokens, the bot also takes into account the value of each of the internal tokens, and sums them into one number.
-
 
 #### Example
 
@@ -73,7 +72,13 @@ For ERC1155 tokens, the bot also takes into account the value of each of the int
 
 Chains with support for [Trace API](https://openethereum.github.io/JSONRPC-trace-module).
 
-- Ethereum (1)
+- Ethereum
+- Optimism
+- Binance Smart Chain
+- Polygon
+- Fantom
+- Arbitrum
+- Avalanche
 
 ## Alerts
 
