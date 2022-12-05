@@ -3,7 +3,13 @@
   "version": "0.0.4",
   "description": "The agent detects deployment of smart contracts containing an exploit function",
   "chainIds": [
-    1
+    1,
+    10,
+    56,
+    137,
+    250,
+    42161,
+    43114
   ],
   "scripts": {
     "build": "tsc",
